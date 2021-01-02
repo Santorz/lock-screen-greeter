@@ -19,6 +19,8 @@ if 16 <= hour_now <= 19:
 if 20 <= hour_now <= 23:
     greet_text = 'Night'
 
-print(f"Good {greet_text} {input} ")
-print(f" The time now is {current_time.hour}:{current_time.minute} ")
+print(f"\n  Good {greet_text} {input} ")
+print(f"  The time now is {current_time.hour}:{current_time.strftime('%M')} ")
+
+print(f"  Today is {current_time.strftime('%A')}, {current_time.strftime('%d')} {current_time.strftime('%B')} {current_time.strftime('%Y')} \n")
 
